@@ -1,3 +1,10 @@
+import { Outlet } from 'react-router-dom';
+
 export default function Header() {
-  return <>헤더영역</>;
+  return (
+    <>
+      <header>헤더</header>
+      <Outlet />
+    </>
+  );
 }

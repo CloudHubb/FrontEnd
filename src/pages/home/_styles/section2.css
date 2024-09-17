@@ -1,0 +1,25 @@
+section {
+  max-width: 1920px;
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  border: 1px solid red;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+nav button {
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  border: 1px solid black;
+}
+nav button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
