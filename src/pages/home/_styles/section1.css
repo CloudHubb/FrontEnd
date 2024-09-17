@@ -5,7 +5,6 @@ section {
 }
 
 .imgCon {
-  border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
