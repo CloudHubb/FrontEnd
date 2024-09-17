@@ -1,0 +1,27 @@
+header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+
+.headerNav {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.headerNav .menuCon {
+  display: flex;
+  gap: 2rem;
+}
+.menuCon a:hover {
+  font-weight: bold;
+  transition: 0.3s;
+}
+.headerEtcCon {
+  display: flex;
+  gap: 1rem;
+}
+.headerEtcCon * {
+  font-size: 1.2rem;
+}

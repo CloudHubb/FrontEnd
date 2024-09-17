@@ -3,7 +3,7 @@ import '../_styles/section2.css';
 export default function Section2() {
   return (
     <section>
-      <nav>
+      <nav className="section2Nav">
         <button>Home</button>
         <button>데이트 폭력</button>
         <button>법적 자료</button>

@@ -4,7 +4,7 @@ section {
   margin: auto;
 }
 
-nav {
+.section2Nav {
   border: 1px solid red;
   padding: 2rem;
   display: flex;
@@ -12,13 +12,13 @@ nav {
   align-items: center;
   gap: 1rem;
 }
-nav button {
+.section2Nav button {
   padding: 0.7rem 1rem;
   background-color: white;
   border-radius: 1.5rem;
   border: 1px solid black;
 }
-nav button:hover {
+.section2Nav button:hover {
   background-color: black;
   color: white;
   transition: 0.3s;
