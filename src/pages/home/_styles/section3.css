@@ -72,14 +72,26 @@ section {
   justify-content: space-between;
   gap: 1rem;
 }
+
+.reactionCon .reactionWrap {
+  display: flex;
+  gap: 1rem;
+}
+
 .reactionCon .fa-heart,
 .reactionCon .heartCount {
   color: #ff3d00;
 }
+.reactionCon .fa-heart,
+.reactionCon .fa-comment {
+  width: 100%;
+}
+
 .reactionCon .fa-comment,
 .reactionCon .commentCount {
   color: #1976d2;
 }
+
 .reactionCon .etcCon {
   color: #d0d0d0;
   font-size: small;

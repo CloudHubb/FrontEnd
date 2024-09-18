@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../_styles/section3.css';
 
 export default function Section3() {
@@ -9,9 +10,11 @@ export default function Section3() {
           <p>
             <span className="redLetter">더 많은 이야기</span>가 궁금하다면?
           </p>
-          <button className="addMoreBtn">
-            <img src="/assets/images/add_more_btn.png" alt="더보기버튼" />
-          </button>
+          <Link to="/community">
+            <button className="addMoreBtn">
+              <img src="/assets/images/add_more_btn.png" alt="더보기버튼" />
+            </button>
+          </Link>
         </div>
         <div className="communityCon">
           <ul className="cards">

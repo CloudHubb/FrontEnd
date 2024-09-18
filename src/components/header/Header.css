@@ -1,5 +1,4 @@
 header {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 3rem;
@@ -24,4 +23,9 @@ header {
 }
 .headerEtcCon * {
   font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.headerEtcCon .fa-chevron-down {
+  position: relative;
 }

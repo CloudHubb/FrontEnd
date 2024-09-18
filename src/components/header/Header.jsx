@@ -1,28 +1,42 @@
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import { useState } from 'react';
 
 import '../header/Header.css';
 
+import HeaderMenu from './_components/HeaderMenu';
+
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState();
+
+  const handleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <header>
         <nav className="headerNav">
-          {/* TODO: react-router-dom의 Link로 바꾸기 */}
           <h1>
-            <a href="#">로고</a>
+            <Link to="/">로고</Link>
           </h1>
           <div className="menuCon">
-            <a href="#">MAIN</a>
-            <a href="#">커뮤니티</a>
-            <a href="#">자가테스트</a>
+            <Link to="/">MAIN</Link>
+            <Link to="/community">커뮤니티</Link>
+            <Link to="/selftest">자가테스트</Link>
           </div>
         </nav>
         <div className="headerEtcCon">
           <i className="fa-solid fa-magnifying-glass"></i>
           <i className="fa-regular fa-bell"></i>
-          <i className="fa-regular fa-user"></i>
-          <i className="fa-solid fa-chevron-down"></i>
+          <Link to="/mypage">
+            <i className="fa-regular fa-user"></i>
+          </Link>
+          <i
+            className={`fa-solid ${isMenuOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
+            onClick={handleMenu}
+          ></i>
         </div>
+        {isMenuOpen && <HeaderMenu />}
       </header>
       <Outlet />
     </>
