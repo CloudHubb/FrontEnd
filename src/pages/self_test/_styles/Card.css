@@ -1,0 +1,27 @@
+.cardContainer {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 35px 29px;
+  width: 815px;
+  height: 130px;
+  background: #ffffff;
+  box-shadow: -4.54545px 9.09091px 31.8182px rgba(0, 0, 0, 0.14);
+  border-radius: 18.1818px;
+}
+
+.cardTitle {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
