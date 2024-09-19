@@ -7,6 +7,7 @@ import DataRoomPage from '../pages/data_room/page';
 import MyPage from '../pages/my_page/page';
 import SelfTestPage from '../pages/self_test/page';
 import GaslightingTestPage from '../pages/self_test/gaslightingTestPage';
+import DatingTestPage from '../pages/self_test/DatingTestPage';
 import Header from '../components/header/Header';
 
 export default function Router() {
@@ -38,6 +39,10 @@ export default function Router() {
         {
           path: routes.gaslighting,
           element: <GaslightingTestPage />,
+        },
+        {
+          path: routes.datingTest,
+          element: <DatingTestPage />,
         },
         {
           path: '/',

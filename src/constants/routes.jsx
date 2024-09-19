@@ -6,4 +6,5 @@ export const routes = {
   mypage: '/mypage',
   selftest: '/selftest',
   gaslighting: '/selftest/gaslighting',
+  datingTest: '/selftest/dating-violence',
 };
