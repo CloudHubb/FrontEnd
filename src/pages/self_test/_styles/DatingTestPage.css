@@ -1,0 +1,105 @@
+.datingTestWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+  margin: 2em auto;
+  height: fit-content;
+}
+
+.datingTestTitleWrapper {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 55px;
+}
+
+.backButton {
+  position: absolute;
+  left: 200px;
+}
+
+.datingTestTitleWrapper > img:hover {
+  cursor: pointer;
+}
+
+.datingTestTitleWrapper > span {
+  font-family: 'Pretendard Variable';
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.testDescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1120px;
+  margin: 2em;
+  height: 440px;
+  padding: 35px;
+  border-radius: 20px;
+  border: 0.5px solid #8f8f8f;
+  font-family: 'Pretendard Variable';
+}
+
+.testDescriptionWrapper > section {
+  max-width: 1920px;
+  width: 90%;
+  margin: auto;
+}
+
+.testDescription1 > p:nth-of-type(1) {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.testDescription1 > p:nth-of-type(2) {
+  color: #ff0000;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.testDescription2 {
+  color: black;
+  font-weight: 300;
+}
+
+.testDescription3 {
+  position: static;
+  color: #dadada;
+  font-weight: 300;
+}
+
+.testDescription2 > p:nth-of-type(1),
+.testDescription3 > p:nth-of-type(1) {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonSection > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  width: 120px;
+  height: 50px;
+  background: #000000;
+  border: 0.8px solid #b3b3b3;
+  border-radius: 36px;
+  color: #fff;
+  font-family: 'Pretendard Variable';
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.buttonSection > button:hover {
+  cursor: pointer;
+}
