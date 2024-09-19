@@ -1,0 +1,28 @@
+.section2Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+  height: 800px;
+  margin: auto;
+}
+
+.section2Line {
+  width: -webkit-fill-available;
+  margin-top: 2em;
+  border: 2px solid #d0d0d0;
+}
+
+#section2Title {
+  font-family: 'Pretendard Variable';
+  font-size: 64px;
+  font-weight: 700;
+  margin: 4rem auto;
+}
+
+.testCardList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
