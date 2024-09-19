@@ -21,7 +21,7 @@ body {
   display: flex;
   max-width: 1920px;
   justify-content: center;
-  margin: auto;
+  margin: 6em auto;
 }
 
 .left_wrapper {
@@ -35,7 +35,7 @@ body {
   position: sticky;
   width: 870px;
   height: 400px;
-  left: 70px;
+  left: 20px;
   font-size: 24px;
   font-weight: 500;
 }
@@ -55,9 +55,9 @@ body {
   width: fit-content;
   justify-content: center;
   align-items: center;
-  /* padding: 64px 104px; */
   gap: 32px;
-  /* position: sticky; */
+  position: relative;
+  right: 20px;
   width: 835px;
   height: 400px;
 }
