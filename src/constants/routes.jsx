@@ -5,4 +5,5 @@ export const routes = {
   dataroom: '/dataroom',
   mypage: '/mypage',
   selftest: '/selftest',
+  gaslighting: '/selftest/gaslighting',
 };

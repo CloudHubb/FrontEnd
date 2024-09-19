@@ -12,9 +12,15 @@ export default function Section1() {
           </p>
         </div>
         <div className="right_wrapper">
-          <TestCard title={'가스라이팅 자가진단 테스트'}></TestCard>
+          <TestCard
+            title={'가스라이팅 자가진단 테스트'}
+            id={'gaslighting'}
+          ></TestCard>
 
-          <TestCard title={'데이트폭력 자가진단 테스트'}></TestCard>
+          <TestCard
+            title={'데이트폭력 자가진단 테스트'}
+            id={'dating-violence'}
+          ></TestCard>
         </div>
       </div>
     </>

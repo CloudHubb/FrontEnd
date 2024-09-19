@@ -1,17 +1,18 @@
 // 예시
-import { Navigate, useRoutes } from "react-router-dom";
-import { routes } from "../constants/routes";
-import HomePage from "../pages/home/page";
-import CommunityPage from "../pages/community/page";
-import DataRoomPage from "../pages/data_room/page";
-import MyPage from "../pages/my_page/page";
-import SelfTestPage from "../pages/self_test/page";
-import Header from "../components/header/Header";
+import { Navigate, useRoutes } from 'react-router-dom';
+import { routes } from '../constants/routes';
+import HomePage from '../pages/home/page';
+import CommunityPage from '../pages/community/page';
+import DataRoomPage from '../pages/data_room/page';
+import MyPage from '../pages/my_page/page';
+import SelfTestPage from '../pages/self_test/page';
+import GaslightingTestPage from '../pages/self_test/gaslightingTestPage';
+import Header from '../components/header/Header';
 
 export default function Router() {
   const elements = [
     {
-      path: "/",
+      path: '/',
       element: <Header />,
       children: [
         {
@@ -35,7 +36,11 @@ export default function Router() {
           element: <SelfTestPage />,
         },
         {
-          path: "/",
+          path: routes.gaslighting,
+          element: <GaslightingTestPage />,
+        },
+        {
+          path: '/',
           element: <Navigate replace to={routes.home} />,
         },
       ],

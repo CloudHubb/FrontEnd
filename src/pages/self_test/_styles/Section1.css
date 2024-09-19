@@ -20,6 +20,8 @@ body {
 .section1_container {
   display: flex;
   max-width: 1920px;
+  justify-content: center;
+  margin: auto;
 }
 
 .left_wrapper {
