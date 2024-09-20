@@ -19,6 +19,9 @@
 .userName > p {
   font-weight: bold;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .category {
@@ -31,7 +34,8 @@
   padding: 1rem 0;
   cursor: pointer;
 }
-.category > *:hover {
+.category > *:hover,
+.etcMenu > *:hover {
   font-weight: bold;
   transition: 0.5s;
 }

@@ -2,6 +2,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 3rem;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .headerNav {
@@ -13,11 +15,14 @@ header {
   display: flex;
   gap: 2rem;
 }
-.menuCon a:hover {
+.menuCon a:hover,
+.menuCon a.activeLink {
   font-weight: bold;
   transition: 0.3s;
 }
+
 .headerEtcCon {
+  position: relative;
   display: flex;
   gap: 1rem;
 }
@@ -28,4 +33,15 @@ header {
 }
 .headerEtcCon .fa-chevron-down {
   position: relative;
+}
+.searchBar {
+  position: absolute;
+  right: 11rem;
+  bottom: 4px;
+  border: none;
+  outline: none;
+  background-color: #dbdce5;
+  border-radius: 5px;
+  font-size: small;
+  padding: 0.5rem 1rem;
 }

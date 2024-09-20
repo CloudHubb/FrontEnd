@@ -4,5 +4,8 @@ export const routes = {
   community: '/community',
   dataroom: '/dataroom',
   mypage: '/mypage',
+  userInfoEdit: '/mypage/edit',
+  userProfileEdit: '/mypage/edit/profile',
+  passwordModal: '/mypage/secretCard/:id',
   selftest: '/selftest',
 };

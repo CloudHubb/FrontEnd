@@ -17,7 +17,8 @@ section {
   border-radius: 1.5rem;
   border: 1px solid black;
 }
-.section2Nav button:hover {
+.section2Nav button:hover,
+.section2Nav .activeButton {
   background-color: black;
   color: white;
   transition: 0.3s;

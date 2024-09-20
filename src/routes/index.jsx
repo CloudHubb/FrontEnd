@@ -1,17 +1,20 @@
 // 예시
-import { Navigate, useRoutes } from "react-router-dom";
-import { routes } from "../constants/routes";
-import HomePage from "../pages/home/page";
-import CommunityPage from "../pages/community/page";
-import DataRoomPage from "../pages/data_room/page";
-import MyPage from "../pages/my_page/page";
-import SelfTestPage from "../pages/self_test/page";
-import Header from "../components/header/Header";
+import { Navigate, useRoutes } from 'react-router-dom';
+import { routes } from '../constants/routes';
+import HomePage from '../pages/home/page';
+import CommunityPage from '../pages/community/page';
+import DataRoomPage from '../pages/data_room/page';
+import MyPage from '../pages/my_page/page';
+import SelfTestPage from '../pages/self_test/page';
+import Header from '../components/header/Header';
+import UserEditPage from '../pages/my_page/_subComponents/userEditPage';
+import UserProfileEditPage from '../pages/my_page/_subComponents/userProfileEditPage';
+import PasswordModal from '../components/modal/PasswordModal';
 
 export default function Router() {
   const elements = [
     {
-      path: "/",
+      path: '/',
       element: <Header />,
       children: [
         {
@@ -31,11 +34,23 @@ export default function Router() {
           element: <MyPage />,
         },
         {
+          path: routes.userInfoEdit,
+          element: <UserEditPage />,
+        },
+        {
+          path: routes.userProfileEdit,
+          element: <UserProfileEditPage />,
+        },
+        {
+          path: routes.passwordModal,
+          element: <PasswordModal />,
+        },
+        {
           path: routes.selftest,
           element: <SelfTestPage />,
         },
         {
-          path: "/",
+          path: '/',
           element: <Navigate replace to={routes.home} />,
         },
       ],
