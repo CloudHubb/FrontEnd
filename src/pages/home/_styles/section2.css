@@ -15,11 +15,11 @@ section {
   padding: 0.7rem 1rem;
   background-color: white;
   border-radius: 1.5rem;
-  border: 1px solid black;
+  border: 1px solid #849573;
 }
 .section2Nav button:hover,
 .section2Nav .activeButton {
-  background-color: black;
+  background-color: #849573;
   color: white;
   transition: 0.3s;
 }
