@@ -6,6 +6,8 @@ export const routes = {
   mypage: '/mypage',
   userInfoEdit: '/mypage/edit',
   userProfileEdit: '/mypage/edit/profile',
-  passwordModal: '/mypage/secretCard/:id',
+  secretCardPassword: '/mypage/secretCardPassword/:id',
+  secretCard: '/mypage/secretCard/:id',
+  writingSecretItem: '/mypage/secretCard/:id/writingSecretItem/:id',
   selftest: '/selftest',
 };

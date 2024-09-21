@@ -9,7 +9,9 @@ import SelfTestPage from '../pages/self_test/page';
 import Header from '../components/header/Header';
 import UserEditPage from '../pages/my_page/_subComponents/userEditPage';
 import UserProfileEditPage from '../pages/my_page/_subComponents/userProfileEditPage';
-import PasswordModal from '../components/modal/PasswordModal';
+import SecretCardPasswordPage from '../pages/my_page/_subComponents/secretCardPasswordPage';
+import SecretCardPage from '../pages/my_page/_subComponents/secretCardPage';
+import WritingSecretItemPage from '../pages/my_page/_subComponents/writingSecretItemPage';
 
 export default function Router() {
   const elements = [
@@ -42,8 +44,16 @@ export default function Router() {
           element: <UserProfileEditPage />,
         },
         {
-          path: routes.passwordModal,
-          element: <PasswordModal />,
+          path: routes.secretCardPassword,
+          element: <SecretCardPasswordPage />,
+        },
+        {
+          path: routes.secretCard,
+          element: <SecretCardPage />,
+        },
+        {
+          path: routes.writingSecretItem,
+          element: <WritingSecretItemPage />,
         },
         {
           path: routes.selftest,
