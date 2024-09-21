@@ -1,0 +1,30 @@
+.datingTestPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+  height: -webkit-fill-available;
+  margin: 2em auto;
+  font-family: var(--basic-font);
+}
+
+.datingTestTitleWrapper {
+  display: flex;
+  width: -webkit-fill-available;
+  max-width: 1920px;
+  align-items: center;
+}
+
+.datingTestTitleWrapper > span {
+  font-size: 48px;
+  font-weight: 600;
+  color: black;
+}
+
+.datingTestContentWrapper {
+  display: flex;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  justify-content: center;
+  padding: 50px;
+}
