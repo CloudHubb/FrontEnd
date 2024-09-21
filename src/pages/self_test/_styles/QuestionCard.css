@@ -1,0 +1,126 @@
+.questionCardWrapper {
+  position: sticky;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 660px;
+  height: 480px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 2.05px solid #f5f5f5;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20.5px rgba(0, 0, 0, 0.1);
+  font-family: var(--basic-font);
+}
+
+.questionText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 2em 0; */
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  /* gap: 4px; */
+  padding-bottom: 50px;
+}
+
+.questionText > p {
+  font-size: 46px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.questionContent {
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  width: 660px;
+  margin: 2em auto;
+  padding: 0 120px;
+  align-items: center;
+}
+
+.questionContent > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  margin: 0 auto;
+  width: 155px;
+  height: 55px;
+  background: #fff;
+  border: 0.8px solid var(--border-color);
+  border-radius: 38px;
+  font-family: var(--basic-font);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.questionContent > button:hover {
+  cursor: pointer;
+}
+
+#yesBtn-unset,
+#noBtn-unset {
+  background-color: #fff;
+}
+
+#yesBtn-set {
+  background-color: var(--sub-5-color);
+}
+
+#noBtn-set {
+  background-color: var(--light-red-color);
+}
+
+.prevNextWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin: 0 auto;
+  width: -webkit-fill-available;
+  height: 55px;
+  background: #fff;
+}
+
+.prevNextWrapper > button:hover {
+  cursor: pointer;
+}
+
+#prevBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 14px;
+  width: 110px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  border: 0.8px solid #f5f5f5;
+  border-radius: 38px;
+  font-family: var(--basic-font);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#nextBtn,
+#showResultBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 14px;
+  width: 110px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  border: 0.8px solid #f5f5f5;
+  border-radius: 38px;
+  font-family: var(--basic-font);
+  font-size: 20px;
+  font-weight: 400;
+}
