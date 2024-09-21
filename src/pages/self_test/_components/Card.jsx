@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 import '../_styles/Card.css';
 
-export default function Card({ title, id }) {
+export default function Card({ title, testType }) {
   return (
     <>
-      <Link to={`/selftest/${id}`}>
+      <Link to={`/selfTest/${testType}`}>
         <div className="cardContainer">
           <p className="cardTitle">{title}</p>
           <img src="/public/assets/images/arrow-right.png" alt="arrow-right" />
@@ -18,5 +18,5 @@ export default function Card({ title, id }) {
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  testType: PropTypes.string.isRequired,
 };

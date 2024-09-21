@@ -26,6 +26,7 @@ const questions = [
 export default function DatingTestPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState(new Array(12).fill(null));
+  const testType = 'dating-violence';
 
   const handleAnswer = (answer) => {
     const updatedAnswers = [...answers];
@@ -50,7 +51,7 @@ export default function DatingTestPage() {
       <div className="datingTestPageWrapper">
         <div className="datingTestTitleWrapper">
           <div className="backButton">
-            <Link to={'/selftest/dating-violence'}>
+            <Link to={`/selftest/${testType}`}>
               <img src="/public/assets/images/arrow-left.png" alt="돌아가기" />
             </Link>
           </div>
@@ -58,6 +59,7 @@ export default function DatingTestPage() {
         </div>
         <div className="datingTestContentWrapper">
           <QuestionCard
+            testType={testType}
             question={questions[currentQuestion]}
             currentQuestion={currentQuestion}
             totalQuestions={questions.length}

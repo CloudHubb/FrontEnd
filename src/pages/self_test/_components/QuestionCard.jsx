@@ -6,8 +6,10 @@ import '../_styles/QuestionCard.css';
 
 // Assets
 import ProgressBar from './ProgressBar';
+import { Link } from 'react-router-dom';
 
 export default function QuestionCard({
+  testType,
   question,
   currentQuestion,
   totalQuestions,
@@ -58,13 +60,11 @@ export default function QuestionCard({
               다음
             </button>
           ) : (
-            <button
-              onClick={() => alert('결과 보기')}
-              disabled={answer === null}
-              id={'showResultBtn'}
-            >
-              결과보기
-            </button>
+            <Link to={`/selfTest/resultPage/${testType}`}>
+              <button disabled={answer === null} id={'showResultBtn'}>
+                결과보기
+              </button>
+            </Link>
           )}
         </section>
       </div>
@@ -73,6 +73,7 @@ export default function QuestionCard({
 }
 
 QuestionCard.propTypes = {
+  testType: PropTypes.string.isRequired,
   question: PropTypes.string.isRequired,
   currentQuestion: PropTypes.number.isRequired,
   totalQuestions: PropTypes.number.isRequired,

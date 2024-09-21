@@ -14,11 +14,11 @@ export default function Section1() {
         <div className="right_wrapper">
           <TestCard
             title={'데이트폭력 자가진단 테스트'}
-            id={'dating-violence'}
+            testType={'datingViolence'}
           ></TestCard>
           <TestCard
             title={'가스라이팅 자가진단 테스트'}
-            id={'gaslighting'}
+            testType={'gaslighting'}
           ></TestCard>
         </div>
       </div>

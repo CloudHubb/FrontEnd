@@ -5,10 +5,14 @@ import HomePage from '../pages/home/page';
 import CommunityPage from '../pages/community/page';
 import DataRoomPage from '../pages/data_room/page';
 import MyPage from '../pages/my_page/page';
+
+// 자가진단 페이지
 import SelfTestPage from '../pages/self_test/page';
 import GaslightingTestPage from '../pages/self_test/gaslightingTestPage';
-import DatingTestDescriptionPage from '../pages/self_test/DatingTestDescriptionPage';
+import TestDescriptionPage from '../pages/self_test/TestDescriptionPage';
 import DatingTestPage from '../pages/self_test/DatingTestPage';
+import TestResultPage from '../pages/self_test/TestResultPage';
+//
 import Header from '../components/header/Header';
 import UserEditPage from '../pages/my_page/_subComponents/userEditPage';
 import UserProfileEditPage from '../pages/my_page/_subComponents/userProfileEditPage';
@@ -57,12 +61,16 @@ export default function Router() {
           element: <GaslightingTestPage />,
         },
         {
-          path: routes.datingTestDescription,
-          element: <DatingTestDescriptionPage />,
+          path: routes.TestDescription,
+          element: <TestDescriptionPage />,
         },
         {
           path: routes.datingTest,
           element: <DatingTestPage />,
+        },
+        {
+          path: routes.selftTestResult,
+          element: <TestResultPage />,
         },
         {
           path: '/',
