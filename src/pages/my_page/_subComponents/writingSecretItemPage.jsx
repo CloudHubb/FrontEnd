@@ -18,17 +18,12 @@ export default function WritingSecretItemPage() {
       </div>
       <div className="secretItemContentCon">
         <textarea
-          name="area1"
-          id="area1"
-          className="secretItemArea1"
+          name="secretItemArea"
+          id="secretItemArea"
+          className="secretItemArea"
           placeholder="내용을 입력하세요."
         ></textarea>
-        <textarea
-          name="area2"
-          id="area2"
-          className="secretItemArea1"
-          placeholder="내용을 입력하세요."
-        ></textarea>
+        <div className="guidLineContent">가이드라인 들어갈 자리</div>
       </div>
       <div className="secretItemControlCon">
         <div className="guideLind_clip">

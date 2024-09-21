@@ -1,13 +1,23 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 import '../_styles/secretCardPage.css';
-import { useState } from 'react';
+
+import GuideLineModal from './guideLineModal';
 
 export default function SecretCardPage() {
   const navigate = useNavigate();
   const location = useLocation();
   const { cardName, selectedIndex } = location.state || {};
   const [, setSecretItemIndex] = useState(null);
+  const [openGuideModal, setOpenGuideModal] = useState(false);
+
+  const handleGuideModal = () => {
+    setOpenGuideModal(!openGuideModal);
+  };
+  const handleCloseGuideLineModal = () => {
+    setOpenGuideModal(false);
+  };
 
   // TODO: 무한스크롤 구현해야 함
   return (
@@ -28,7 +38,7 @@ export default function SecretCardPage() {
         <li className="secretItem"></li>
       </ul>
       <div className="floatingBtnCon">
-        <div className="guideBtn">
+        <div className="guideBtn" onClick={handleGuideModal}>
           <img
             className="guideLineImg"
             src="/assets/images/guideLineBtn.png"
@@ -44,6 +54,10 @@ export default function SecretCardPage() {
           <img src="/assets/images/writingBtn.png" alt="글쓰기버튼" />
         </Link>
       </div>
+
+      {openGuideModal && (
+        <GuideLineModal handleCloseGuideLineModal={handleCloseGuideLineModal} />
+      )}
     </section>
   );
 }
