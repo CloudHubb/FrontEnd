@@ -12,7 +12,7 @@ const testList = {
       'Lorem ipsum dolor sit amet consectetur. Nulla eu egestas convallis tristique integer semper iaculis. Malesuada aliquam sem blandit in purus erat a quam. Nisl feugiat arcu sed bibendum magna lectus miblandit. Est iaculis orci amet et quis tellus id. Lorem ipsum dolor sit amet consectetur. Nulla eu egestas convallis tristique integer semper iaculis.',
   },
   gaslighting: {
-    title: '가스라이팅',
+    title: '가스라이팅 자가진단 테스트',
     type: 'gaslighting',
     description:
       'Lorem ipsum dolor sit amet consectetur. Nulla eu egestas convallis tristique integer semper iaculis. Malesuada aliquam sem blandit in purus erat a quam. Nisl feugiat arcu sed bibendum magna lectus miblandit. Est iaculis orci amet et quis tellus id. Lorem ipsum dolor sit amet consectetur. Nulla eu egestas convallis tristique integer semper iaculis.',
