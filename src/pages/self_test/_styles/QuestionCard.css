@@ -123,4 +123,5 @@
   font-family: var(--basic-font);
   font-size: 20px;
   font-weight: 400;
+  cursor: pointer;
 }
