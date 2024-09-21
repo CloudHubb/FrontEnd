@@ -9,5 +9,6 @@ export const routes = {
   passwordModal: '/mypage/secretCard/:id',
   selftest: '/selftest',
   gaslighting: '/selftest/gaslighting',
-  datingTest: '/selftest/dating-violence',
+  datingTestDescription: '/selftest/dating-violence',
+  datingTest: '/selftest/dating-violence/test-page',
 };
