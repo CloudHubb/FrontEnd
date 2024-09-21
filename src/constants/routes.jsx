@@ -8,7 +8,6 @@ export const routes = {
   userProfileEdit: '/mypage/edit/profile',
   passwordModal: '/mypage/secretCard/:id',
   selftest: '/selfTest',
-  gaslighting: '/selfTest/gaslighting',
   testDescription: '/selfTest/:testType',
   testProgress: '/selfTest/testPage/:testType',
   selftTestResult: '/selfTest/resultPage/:testType',
