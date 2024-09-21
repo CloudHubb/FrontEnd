@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import '../_styles/userProfileEditPage.css';
+import '../../_styles/userProfileEditPage.css';
 
 export default function UserProfileEditPage() {
   const navigate = useNavigate();

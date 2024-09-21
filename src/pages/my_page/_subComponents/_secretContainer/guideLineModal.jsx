@@ -1,4 +1,4 @@
-import '../_styles/guideLineModal.css';
+import '../../_styles/guideLineModal.css';
 
 export default function GuideLineModal({ handleCloseGuideLineModal }) {
   return (

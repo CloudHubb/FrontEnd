@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import '../_styles/writingSecretItemPage.css';
+import '../../_styles/writingSecretItemPage.css';
 
 export default function WritingSecretItemPage() {
   const navigate = useNavigate();

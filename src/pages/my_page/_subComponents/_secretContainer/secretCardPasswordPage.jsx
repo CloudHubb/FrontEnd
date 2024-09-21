@@ -1,6 +1,6 @@
-import '../_styles/secretCardPasswordPage.css';
+import '../../_styles/secretCardPasswordPage.css';
 
-import PasswordModal from '../../../components/modal/PasswordModal';
+import PasswordModal from '../../../../components/modal/PasswordModal';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function SecretCardPasswordPage() {

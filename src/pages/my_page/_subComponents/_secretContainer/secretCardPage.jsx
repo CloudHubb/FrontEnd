@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-import '../_styles/secretCardPage.css';
+import '../../_styles/secretCardPage.css';
 
 import GuideLineModal from './guideLineModal';
 

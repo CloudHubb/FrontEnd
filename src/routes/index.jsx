@@ -1,17 +1,23 @@
-// 예시
 import { Navigate, useRoutes } from 'react-router-dom';
+
 import { routes } from '../constants/routes';
-import HomePage from '../pages/home/page';
-import CommunityPage from '../pages/community/page';
-import DataRoomPage from '../pages/data_room/page';
-import MyPage from '../pages/my_page/page';
-import SelfTestPage from '../pages/self_test/page';
+
 import Header from '../components/header/Header';
-import UserEditPage from '../pages/my_page/_subComponents/userEditPage';
-import UserProfileEditPage from '../pages/my_page/_subComponents/userProfileEditPage';
-import SecretCardPasswordPage from '../pages/my_page/_subComponents/secretCardPasswordPage';
-import SecretCardPage from '../pages/my_page/_subComponents/secretCardPage';
-import WritingSecretItemPage from '../pages/my_page/_subComponents/writingSecretItemPage';
+
+import HomePage from '../pages/home/page';
+
+import CommunityPage from '../pages/community/page';
+
+import DataRoomPage from '../pages/data_room/page';
+
+import SelfTestPage from '../pages/self_test/page';
+
+import MyPage from '../pages/my_page/page';
+import UserEditPage from '../pages/my_page/_subComponents/_userSetting/userEditPage';
+import UserProfileEditPage from '../pages/my_page/_subComponents//_userSetting/userProfileEditPage';
+import SecretCardPasswordPage from '../pages/my_page/_subComponents/_secretContainer/secretCardPasswordPage';
+import SecretCardPage from '../pages/my_page/_subComponents/_secretContainer/secretCardPage';
+import WritingSecretItemPage from '../pages/my_page/_subComponents/_secretContainer/writingSecretItemPage';
 
 export default function Router() {
   const elements = [
