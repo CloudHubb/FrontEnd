@@ -9,7 +9,7 @@ export const routes = {
   passwordModal: '/mypage/secretCard/:id',
   selftest: '/selfTest',
   gaslighting: '/selfTest/gaslighting',
-  TestDescription: '/selfTest/:testType',
-  datingTest: '/selfTest/testPage/datingViolence',
+  testDescription: '/selfTest/:testType',
+  testProgress: '/selfTest/testPage/:testType',
   selftTestResult: '/selfTest/resultPage/:testType',
 };

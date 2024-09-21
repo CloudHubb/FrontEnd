@@ -10,7 +10,7 @@ import MyPage from '../pages/my_page/page';
 import SelfTestPage from '../pages/self_test/page';
 import GaslightingTestPage from '../pages/self_test/gaslightingTestPage';
 import TestDescriptionPage from '../pages/self_test/TestDescriptionPage';
-import DatingTestPage from '../pages/self_test/DatingTestPage';
+import TestProgressPage from '../pages/self_test/TestProgressPage';
 import TestResultPage from '../pages/self_test/TestResultPage';
 //
 import Header from '../components/header/Header';
@@ -61,12 +61,12 @@ export default function Router() {
           element: <GaslightingTestPage />,
         },
         {
-          path: routes.TestDescription,
+          path: routes.testDescription,
           element: <TestDescriptionPage />,
         },
         {
-          path: routes.datingTest,
-          element: <DatingTestPage />,
+          path: routes.testProgress,
+          element: <TestProgressPage />,
         },
         {
           path: routes.selftTestResult,
