@@ -9,6 +9,9 @@ import SelfTestPage from '../pages/self_test/page';
 import GaslightingTestPage from '../pages/self_test/gaslightingTestPage';
 import DatingTestPage from '../pages/self_test/DatingTestPage';
 import Header from '../components/header/Header';
+import UserEditPage from '../pages/my_page/_subComponents/userEditPage';
+import UserProfileEditPage from '../pages/my_page/_subComponents/userProfileEditPage';
+import PasswordModal from '../components/modal/PasswordModal';
 
 export default function Router() {
   const elements = [
@@ -31,6 +34,18 @@ export default function Router() {
         {
           path: routes.mypage,
           element: <MyPage />,
+        },
+        {
+          path: routes.userInfoEdit,
+          element: <UserEditPage />,
+        },
+        {
+          path: routes.userProfileEdit,
+          element: <UserProfileEditPage />,
+        },
+        {
+          path: routes.passwordModal,
+          element: <PasswordModal />,
         },
         {
           path: routes.selftest,

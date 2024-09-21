@@ -3,8 +3,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   max-width: 1920px;
-  margin: 6em auto 0;
-  background-color: black;
+  width: 100%;
+  margin: 10rem auto 0;
+  background-color: #705d3f;
   padding: 6rem;
 }
 

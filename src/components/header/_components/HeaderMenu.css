@@ -1,45 +1,53 @@
 .headerMenuCon {
   box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  width: 350px;
+  border-radius: 15px;
+  width: 320px;
   position: absolute;
   z-index: 999;
-  right: 10px;
+  right: 40px;
   top: 50px;
-  background-color: white;
+  background-color: #e3d3bc;
 }
 
 .userName {
   padding: 1.5rem 1rem;
   display: flex;
   gap: 1rem;
-  border-bottom: 5px solid #dbdce563;
+  border-bottom: 5px solid #ccac85;
   cursor: pointer;
 }
 .userName > p {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .category {
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  border-bottom: 5px solid #dbdce563;
+  border-bottom: 5px solid #ccac85;
 }
 .category > * {
   padding: 1rem 0;
+  font-size: 16px;
   cursor: pointer;
 }
-.category > *:hover {
+.category > *:hover,
+.etcMenu > *:hover {
   font-weight: bold;
   transition: 0.5s;
 }
 
 .etcMenu {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
+}
+.etcMenu * {
+  font-size: 16px;
 }
 i {
   width: 30px;
@@ -55,13 +63,13 @@ i {
   gap: 1rem;
 }
 .userSetting > * {
-  font-size: small;
+  font-size: 12px;
 }
 .userSetting > *:nth-of-type(1) {
-  color: #8f8f8f;
-  border-bottom: 1px solid #8f8f8f;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 .userSetting > *:nth-of-type(2) {
-  color: #dadada;
-  border-bottom: 1px solid #dadada;
+  color: #572e0e;
+  border-bottom: 1px solid #572e0e;
 }
