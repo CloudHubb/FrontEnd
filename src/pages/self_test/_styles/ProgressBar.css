@@ -1,0 +1,12 @@
+.progressBarWrapper {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 100px;
+}
+
+.progressBar {
+  height: 4.5px;
+  border-radius: 100px;
+  background-color: var(--sub-5-color);
+  transition: width 0.3s ease-in-out;
+}

@@ -7,5 +7,8 @@ export const routes = {
   userInfoEdit: '/mypage/edit',
   userProfileEdit: '/mypage/edit/profile',
   passwordModal: '/mypage/secretCard/:id',
-  selftest: '/selftest',
+  selftest: '/selfTest',
+  testDescription: '/selfTest/:testType',
+  testProgress: '/selfTest/testPage/:testType',
+  selftTestResult: '/selfTest/resultPage/:testType',
 };
