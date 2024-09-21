@@ -10,11 +10,11 @@
 .section2Line {
   width: -webkit-fill-available;
   margin-top: 2em;
-  border: 2px solid #d0d0d0;
+  border: 2px solid var(--light-gray-color);
 }
 
 #section2Title {
-  font-family: 'Pretendard Variable';
+  font-family: var(--basic-font);
   font-size: 64px;
   font-weight: 700;
   margin: 4rem auto;

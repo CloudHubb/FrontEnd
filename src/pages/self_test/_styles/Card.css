@@ -17,7 +17,7 @@
 }
 
 .cardTitle {
-  font-family: 'Pretendard Variable';
+  font-family: var(--basic-font);
   font-style: normal;
   font-weight: 800;
   font-size: 28px;

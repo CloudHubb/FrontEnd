@@ -9,7 +9,7 @@
   background: #fff;
   box-shadow: -4.5px 9px 32px rgba(0, 0, 0, 0.14);
   border-radius: 18px;
-  font-family: 'Pretendard Variable';
+  font-family: var(--basic-font);
   font-weight: 600;
   line-height: 50px;
 }
@@ -20,6 +20,6 @@
 }
 
 .resultCardWrapper > p:nth-of-type(2) {
-  color: #ff9278;
+  color: var(--light-red-color);
   font-size: 36px;
 }

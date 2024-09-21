@@ -25,7 +25,7 @@
 }
 
 .datingTestTitleWrapper > span {
-  font-family: 'Pretendard Variable';
+  font-family: var(--basic-font);
   font-weight: 700;
   font-size: 48px;
 }
@@ -36,10 +36,10 @@
   width: 1120px;
   margin: 2em;
   height: 440px;
-  padding: 35px;
+  padding: 20px 35px;
   border-radius: 20px;
-  border: 0.5px solid #8f8f8f;
-  font-family: 'Pretendard Variable';
+  border: 0.5px solid var(--gray-color);
+  font-family: var(--basic-font);
 }
 
 .testDescriptionWrapper > section {
@@ -56,7 +56,7 @@
 }
 
 .testDescription1 > p:nth-of-type(2) {
-  color: #ff0000;
+  color: var(--red-color);
   font-size: 19px;
   font-weight: 500;
 }
@@ -89,13 +89,14 @@
   justify-content: center;
   align-items: center;
   padding: 7px 12px;
+  margin-top: 20px;
   width: 120px;
   height: 50px;
-  background: #000000;
-  border: 0.8px solid #b3b3b3;
+  background: var(--main-1-color);
+  border: 0.8px solid var(--border-color);
   border-radius: 36px;
   color: #fff;
-  font-family: 'Pretendard Variable';
+  font-family: var(--basic-font);
   font-size: 23px;
   font-weight: 400;
 }
