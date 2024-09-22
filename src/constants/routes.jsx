@@ -10,4 +10,5 @@ export const routes = {
   secretCard: '/mypage/secretCard/:id',
   writingSecretItem: '/mypage/secretCard/:id/writingSecretItem/:id',
   selftest: '/selftest',
+  search: '/search', // 임시: 바꿀 예정
 };

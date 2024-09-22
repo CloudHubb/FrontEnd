@@ -18,6 +18,7 @@ import UserProfileEditPage from '../pages/my_page/_subComponents//_userSetting/u
 import SecretCardPasswordPage from '../pages/my_page/_subComponents/_secretContainer/secretCardPasswordPage';
 import SecretCardPage from '../pages/my_page/_subComponents/_secretContainer/secretCardPage';
 import WritingSecretItemPage from '../pages/my_page/_subComponents/_secretContainer/writingSecretItemPage';
+import SearchResultPage from '../pages/search_result/page';
 
 export default function Router() {
   const elements = [
@@ -64,6 +65,10 @@ export default function Router() {
         {
           path: routes.selftest,
           element: <SelfTestPage />,
+        },
+        {
+          path: routes.search,
+          element: <SearchResultPage />,
         },
         {
           path: '/',

@@ -1,0 +1,40 @@
+.searchPageTitleCon {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 0;
+}
+.searchPageTitleCon .filteringBtnCon {
+  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.17);
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+.filteringBtn,
+.HoverFilteringBtn {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+.HoverFilteringBtn {
+  background-color: black;
+  color: white;
+}
+.searchPageTitle {
+  display: flex;
+  gap: 0.3rem;
+}
+.searchPageTitle p {
+  font-size: 28px;
+  font-weight: 600;
+}
+.searchPageTitle p:nth-of-type(2) {
+  color: #8f8f8f;
+}
