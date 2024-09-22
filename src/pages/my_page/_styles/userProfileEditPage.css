@@ -62,23 +62,24 @@ form {
 }
 
 .profileEditErrorMsg {
-  padding-top: 1rem;
+  padding: 1rem;
   color: #ff0000;
   font-size: small;
 }
 
 .profileEditBtn {
-  width: 100px;
+  width: 120px;
   padding: 0.7rem 1.2rem;
   border-radius: 1.2rem;
-  border: 2px solid #a28868;
-  color: #a28868;
+  border: 2px solid #ccac85;
+  color: #ccac85;
   background-color: white;
   margin: auto;
   cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 .profileEditBtn:hover {
-  border: 2px solid #b39066;
-  color: #b39066;
+  border: 2px solid #a28868;
+  color: #a28868;
   transition: 0.3s;
 }

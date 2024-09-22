@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../_styles/userEditPage.css';
+import '../../_styles/userEditPage.css';
 
 export default function UserEditPage() {
   return (

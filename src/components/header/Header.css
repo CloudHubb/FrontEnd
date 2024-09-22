@@ -41,8 +41,15 @@ header {
   bottom: 4px;
   border: none;
   outline: none;
-  background-color: #dbdce5;
+  background-color: #849573;
   border-radius: 5px;
+  color: white;
+  font-weight: 400;
   font-size: small;
   padding: 0.5rem 1rem;
+  cursor: auto;
+}
+.searchBar::placeholder {
+  color: white;
+  font-weight: 400;
 }

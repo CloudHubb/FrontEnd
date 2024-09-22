@@ -5,6 +5,7 @@ section {
 }
 
 .secretCards {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -34,10 +35,16 @@ section {
   align-items: center;
 }
 
-.fa-circle-plus {
+.secretCardAddBtn {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fa-circle-plus {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   font-size: 2rem;
-  text-align: center;
   padding: 2rem;
   cursor: pointer;
   transition: transform 0.3s ease;
