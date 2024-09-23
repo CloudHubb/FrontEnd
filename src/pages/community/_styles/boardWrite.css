@@ -1,0 +1,77 @@
+.boardWriteWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  max-width: 1920px;
+  margin: 4em auto 0;
+  padding: 0 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+#enterContentBox {
+  width: 90%;
+  height: 440px;
+  padding: 70px;
+  margin-top: 30px;
+
+  border: 0.8px solid var(--light-gray-color);
+  border-radius: 20px;
+  resize: none;
+  outline: none;
+
+  font-family: var(--basic-font);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+
+.boardWriteBottomSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em auto 0;
+  width: 100%;
+  height: 100px;
+
+  font-family: var(--basic-font);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.boardWriteBottomSection > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 50px;
+}
+
+.boardWriteBottomSection > div:hover {
+  cursor: pointer;
+}
+
+#anonymityButton {
+  color: black;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  border-radius: 36px;
+}
+
+#anonymityButton:hover {
+  background-color: #b3b3b3;
+  color: #fff;
+}
+
+#writeDoneButton {
+  color: #fff;
+  background-color: var(--main-1-color);
+  border: 1px solid var(--main-1-color);
+  border-radius: 36px;
+}
+
+#writeDoneButton:hover {
+  background-color: var(--sub-1-color);
+  border: 1px solid var(--sub-1-color);
+}

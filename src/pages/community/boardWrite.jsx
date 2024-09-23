@@ -1,9 +1,24 @@
 import './_styles/boardWrite.css';
 
+// Components
+import TitleToggle from './_components/titleToggle';
+import BoardTitleWrapper from './_components/boardTitle';
+
 export default function boardWrite() {
   return (
     <>
-      <h2>게시글 작성 페이지</h2>
+      <div className="boardWriteWrapper">
+        <TitleToggle />
+        <BoardTitleWrapper type={'write'} />
+        <textarea
+          id="enterContentBox"
+          placeholder="내용을 입력하세요."
+        ></textarea>
+        <div className="boardWriteBottomSection">
+          <div id="anonymityButton">익명</div>
+          <div id="writeDoneButton">완료</div>
+        </div>
+      </div>
     </>
   );
 }

@@ -1,0 +1,72 @@
+.boardWriteTitleWrapper {
+  display: flex;
+  width: -webkit-fill-available;
+  max-width: 1920px;
+  position: static;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 55px;
+  margin: 3em auto 0;
+}
+
+.boardWriteTitleWrapper > span {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+.boardDetailTitleWrapper {
+  display: flex;
+  width: -webkit-fill-available;
+  max-width: 1920px;
+  position: static;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 55px;
+  margin: 3em auto 0;
+}
+
+.boardDetailTitleWrapper > span {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#moreButton_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #ffffff;
+  box-shadow: -2px 4px 14px rgba(0, 0, 0, 0.14);
+}
+
+#moreButton_active:hover {
+  cursor: pointer;
+}
+
+#titleWrite__input {
+  all: unset;
+  width: 50%;
+  padding: 10px 10px 15px;
+  font-family: var(--basic-font);
+  font-size: 48px;
+  font-weight: 500;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px dashed black;
+}
+
+#titleWrite__input::placeholder {
+  text-align: center;
+}
+
+#titleWrite__input:not(:placeholder-shown) {
+  text-align: left;
+}
+
+#titleWrite__input:focus::placeholder {
+  color: transparent;
+}

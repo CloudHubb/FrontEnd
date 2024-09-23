@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   width: 330px;
-  height: 70px;
+  height: 55px;
   background-color: var(--main-1-color);
   border-radius: 30px;
   font-family: var(--basic-font);
@@ -29,12 +29,12 @@
   justify-content: center;
   margin-left: 2em;
   background-color: var(--main-1-color);
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   border-radius: 100%;
 }
 
 .writeIcon > img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
