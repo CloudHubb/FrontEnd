@@ -14,29 +14,31 @@ export default function Section1() {
     <>
       <div className="section1Wrapper">
         <TitleWrapper />
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={20}
-          freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[FreeMode]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <TodayPopularCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TodayPopularCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TodayPopularCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TodayPopularCard />
-          </SwiperSlide>
-        </Swiper>
+        <div className="todayPopularList">
+          <span>오늘의 인기글</span>
+          <div className="todayPopularListTitleBox" />
+
+          <Swiper
+            slidesPerView={2.5}
+            spaceBetween={10}
+            freeMode={false}
+            modules={[FreeMode]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <TodayPopularCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TodayPopularCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TodayPopularCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TodayPopularCard />
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </>
   );
