@@ -11,12 +11,12 @@ export default function Section2() {
           <span>조회순</span>
         </div>
         <div className="boardList">
-          <BoardCard />
-          <BoardCard />
-          <BoardCard />
-          <BoardCard />
-          <BoardCard />
-          <BoardCard />
+          <BoardCard boardId={1} />
+          <BoardCard boardId={2} />
+          <BoardCard boardId={3} />
+          <BoardCard boardId={4} />
+          <BoardCard boardId={5} />
+          <BoardCard boardId={6} />
         </div>
       </div>
     </>

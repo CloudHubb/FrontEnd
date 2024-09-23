@@ -25,16 +25,16 @@ export default function Section1() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <TodayPopularCard />
+              <TodayPopularCard boardId={7} />
             </SwiperSlide>
             <SwiperSlide>
-              <TodayPopularCard />
+              <TodayPopularCard boardId={8} />
             </SwiperSlide>
             <SwiperSlide>
-              <TodayPopularCard />
+              <TodayPopularCard boardId={9} />
             </SwiperSlide>
             <SwiperSlide>
-              <TodayPopularCard />
+              <TodayPopularCard boardId={10} />
             </SwiperSlide>
           </Swiper>
           <div className="todayPopularListTitleBox2" />
