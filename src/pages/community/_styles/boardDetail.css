@@ -1,0 +1,25 @@
+.boardDetailWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  max-width: 1920px;
+  margin: 2em auto;
+  padding: 0 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardCardInfoBottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 1em auto;
+  position: relative;
+  left: 22px;
+  top: 90px;
+  font-family: var(--basic-font);
+  font-size: 19px;
+  font-weight: 500;
+}
