@@ -1,0 +1,79 @@
+section {
+  max-width: 1920px;
+  width: 80%;
+  margin: auto;
+}
+.wrap {
+  display: flex;
+  width: calc(100% - 5rem);
+  margin: auto;
+}
+
+.legalCon {
+  width: 50%;
+}
+.legalTitleCon {
+  width: 50%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 16rem;
+}
+.legalTitleCon h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.legalTitleCon p {
+  font-weight: normal;
+}
+.legalTitleCon .redLetter {
+  color: red;
+}
+.legalTitleCon .addMoreBtn {
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  cursor: pointer;
+  padding-top: 3rem;
+}
+.addMoreBtn img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.legalCard {
+  border-radius: 5px;
+  box-shadow: 0px 0px 23.33px 0px #0000001a;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  justify-content: space-evenly;
+  gap: 5px;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.legalCard .title {
+  display: flex;
+  justify-content: space-between;
+}
+.title p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+}
+.title .fa-arrow-right {
+  font-size: 1.8rem;
+}
+
+.legalCard > p:nth-of-type(1) {
+  color: #8f8f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  font-size: medium;
+  font-weight: normal;
+}

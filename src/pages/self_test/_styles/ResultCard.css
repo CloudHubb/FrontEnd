@@ -1,0 +1,25 @@
+.resultCardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 995px;
+  height: 150px;
+  padding: 35px 55px;
+  background: #fff;
+  box-shadow: -4.5px 9px 32px rgba(0, 0, 0, 0.14);
+  border-radius: 18px;
+  font-family: var(--basic-font);
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.resultCardWrapper > p:nth-of-type(1) {
+  color: black;
+  font-size: 32px;
+}
+
+.resultCardWrapper > p:nth-of-type(2) {
+  color: var(--light-red-color);
+  font-size: 36px;
+}

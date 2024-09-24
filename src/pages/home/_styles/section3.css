@@ -1,0 +1,46 @@
+section {
+  max-width: 1920px;
+  width: 80%;
+  margin: auto;
+}
+
+.wrap {
+  display: flex;
+  width: calc(100% - 5rem);
+  margin: auto;
+}
+
+.titleCon {
+  width: 50%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 4rem;
+}
+.titleCon h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.titleCon p {
+  font-weight: normal;
+}
+.titleCon .redLetter {
+  color: red;
+}
+.titleCon .addMoreBtn {
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  cursor: pointer;
+  padding-top: 3rem;
+}
+.addMoreBtn img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.communityCon {
+  width: 50%;
+}

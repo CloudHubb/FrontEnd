@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  width: 100%;
+  margin: 10rem auto 0;
+  background-color: #705d3f;
+  padding: 6rem;
+}
+
+.copyRightCon p {
+  color: white;
+  font-size: small;
+}
+
+.companyInfo {
+  display: flex;
+  gap: 1rem;
+}
+.companyInfo p {
+  color: #a0abc0;
+  font-size: small;
+}

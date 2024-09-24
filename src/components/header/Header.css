@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+
+.headerNav {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.headerNav .menuCon {
+  display: flex;
+  gap: 2rem;
+}
+.menuCon a:hover,
+.menuCon a.activeLink {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.headerEtcCon {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+.headerEtcCon * {
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.headerEtcCon .fa-chevron-down {
+  position: relative;
+}
+.searchBar {
+  position: absolute;
+  right: 11rem;
+  bottom: 4px;
+  border: none;
+  outline: none;
+  background-color: #849573;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  font-size: small;
+  padding: 0.5rem 1rem;
+  cursor: auto;
+}
+.searchBar::placeholder {
+  color: white;
+  font-weight: 400;
+}

@@ -1,3 +1,24 @@
+:root {
+  --main-1-color: #849573;
+  --main-2-color: #705d3f;
+  --sub-1-color: #373d21;
+  --sub-2-color: #e3d3bc;
+  --sub-3-color: #ccac85;
+  --sub-4-color: #572e0e;
+  --sub-5-color: #b4b897;
+
+  --red-color: #ff0000;
+  --light-red-color: #ff9278;
+  --gray-color: #8f8f8f;
+  --light-gray-color: #d0d0d0;
+  --border-color: #b3b3b3;
+
+  --basic-font: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
 html,
 body,
 div,
@@ -86,6 +107,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
 }
 article,
 aside,
@@ -115,7 +137,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {

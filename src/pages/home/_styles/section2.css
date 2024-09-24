@@ -1,0 +1,25 @@
+section {
+  max-width: 1920px;
+  width: 80%;
+  margin: auto;
+}
+
+.section2Nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section2Nav button {
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  border: 1px solid #849573;
+}
+.section2Nav button:hover,
+.section2Nav .activeButton {
+  background-color: #849573;
+  color: white;
+  transition: 0.3s;
+}

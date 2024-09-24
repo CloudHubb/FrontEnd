@@ -1,0 +1,62 @@
+.guideLineModalCon {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccac85;
+  border-radius: 1rem;
+  box-shadow: 0.5px 0.5px 5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.guideLine_x_mark {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  color: white;
+}
+
+.guideLineModalWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.guideLineModalContent {
+  margin-top: 1rem;
+}
+
+.guideLineTitle {
+  font-size: 24px;
+  padding-bottom: 2rem;
+}
+.guideLineTitle,
+.guideLineSubTitle {
+  color: white;
+}
+.guideLineSubTitle {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+}
+
+.guideLineItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  gap: 5rem;
+  border-radius: 2rem;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+.guideLineItem > p {
+  font-weight: 700;
+}
+.guideLineItem > img {
+  width: 30px;
+  height: 30px;
+}
