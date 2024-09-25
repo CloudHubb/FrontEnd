@@ -1,0 +1,71 @@
+.commentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 25px 40px;
+  border: 0.5px solid var(--gray-color);
+  border-radius: 20px;
+}
+
+.commentInfoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.commentInfoLeft {
+  display: flex;
+  width: 25%;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: var(--basic-font);
+}
+
+.commentInfoLeft > span:nth-of-type(1) {
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+.commentInfoLeft > span:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--light-gray-color);
+}
+
+.commentInfoRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+}
+
+.commentInfoRight > img {
+  margin-left: 10px;
+}
+
+.commentInfoRight > img:hover {
+  cursor: pointer;
+}
+
+.commentInfoRight > img:nth-of-type(3) {
+  margin-left: 5px;
+}
+
+.commentContent {
+  margin-top: 20px;
+  width: 100%;
+  font-family: var(--basic-font);
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

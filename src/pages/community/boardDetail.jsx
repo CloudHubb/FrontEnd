@@ -1,18 +1,59 @@
+import { useState } from 'react';
+
 // Styles
 import './_styles/boardDetail.css';
 
 // Assets
-import TitleWrapper from './_components/titleToggle';
-import BoardTitle from './_components/boardTitle';
-import BoardInfo from './_components/boardInfo';
+import defaultBoardLike from '/public/boardLike-icon.svg';
+import setBoardLike from '/public/setBoardLike-icon.svg';
 
-export default function boardDetail() {
+// Components
+import TitleWrapper from './_components/TitleToggle';
+import BoardTitle from './_components/BoardTitle';
+import BoardInfo from './_components/BoardInfo';
+import CommentWrapper from './_components/CommentWrapper';
+import CommentWriteWrapper from './_components/CommentWriteWrapper';
+
+export default function BoardDetail() {
+  const [isClick, setIsClick] = useState(false);
+  const handleIsClick = (prevClick) => {
+    setIsClick(!prevClick);
+  };
+
+  const [boardLikeImgSrc, setImgSrc] = useState(defaultBoardLike);
+  const handleIconClick = () => {
+    setImgSrc((isClick) =>
+      isClick === defaultBoardLike ? setBoardLike : defaultBoardLike,
+    );
+  };
+
   return (
     <>
       <div className="boardDetailWrapper">
         <TitleWrapper />
         <BoardTitle type={'detail'} />
         <BoardInfo type={'detail'} />
+        <div className="boardContentWrapper">
+          <div className="boardContent">
+            민사 소송이란, 넓은 의미에서 개인 간의 권리를 확정하여 개인의 권리를
+            보호하고 사법...
+          </div>
+          <div className="boardContentLikeWrapper">
+            <img
+              onClick={() => {
+                handleIsClick(isClick);
+                handleIconClick(isClick);
+              }}
+              src={boardLikeImgSrc}
+              alt="게시글 좋아요 아이콘"
+            />
+          </div>
+        </div>
+        <CommentWrapper />
+        <CommentWrapper />
+        <CommentWrapper />
+        <CommentWrapper />
+        <CommentWriteWrapper />
       </div>
     </>
   );

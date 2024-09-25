@@ -1,8 +1,8 @@
 import './_styles/boardWrite.css';
 
 // Components
-import TitleToggle from './_components/titleToggle';
-import BoardTitleWrapper from './_components/boardTitle';
+import TitleToggle from './_components/TitleToggle';
+import BoardTitleWrapper from './_components/BoardTitle';
 
 export default function boardWrite() {
   return (

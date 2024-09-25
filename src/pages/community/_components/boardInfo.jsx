@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 // Styles
 import '../_styles/boardInfo.css';
 
@@ -5,7 +7,7 @@ import '../_styles/boardInfo.css';
 import HeartIcon from '/public/heart.svg';
 import CommentIcon from '/public/message-circle.svg';
 
-export default function boardInfo({ type }) {
+export default function BoardInfo({ type }) {
   const writeDate = '18 : 53';
   const writer = '익명';
 
@@ -41,3 +43,7 @@ export default function boardInfo({ type }) {
     </>
   );
 }
+
+BoardInfo.propTypes = {
+  type: PropTypes.string.isRequired,
+};
