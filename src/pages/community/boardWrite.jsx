@@ -1,10 +1,23 @@
-import './_styles/boardWrite.css';
+import { useState } from 'react';
 
 // Components
 import TitleToggle from './_components/TitleToggle';
 import BoardTitleWrapper from './_components/BoardTitle';
 
-export default function boardWrite() {
+// Styles
+import './_styles/boardWrite.css';
+
+export default function BoardWrite() {
+  const [isAnonyClick, setIsAnonyClick] = useState(false);
+  const [anonyClassName, setAnonyClassName] = useState('anonymityButton');
+
+  const handleAnonyClick = () => {
+    setIsAnonyClick((prevClick) => {
+      setAnonyClassName(prevClick ? 'anonymityButton' : 'clickAnonymityButton');
+      return !prevClick;
+    });
+  };
+
   return (
     <>
       <div className="boardWriteWrapper">
@@ -15,7 +28,14 @@ export default function boardWrite() {
           placeholder="내용을 입력하세요."
         ></textarea>
         <div className="boardWriteBottomSection">
-          <div id="anonymityButton">익명</div>
+          <div
+            className={anonyClassName}
+            onClick={() => {
+              handleAnonyClick(isAnonyClick);
+            }}
+          >
+            익명
+          </div>
           <div id="writeDoneButton">완료</div>
         </div>
       </div>

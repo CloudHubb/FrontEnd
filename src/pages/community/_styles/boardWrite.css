@@ -52,16 +52,20 @@
   cursor: pointer;
 }
 
-#anonymityButton {
+.anonymityButton {
   color: black;
   background-color: #fff;
   border: 1px solid #b3b3b3;
   border-radius: 36px;
+  transition: all 0.4s ease-in-out;
 }
 
-#anonymityButton:hover {
+.clickAnonymityButton {
+  border: 1px solid #b3b3b3;
+  border-radius: 36px;
   background-color: #b3b3b3;
   color: #fff;
+  transition: all 0.2s ease-in-out;
 }
 
 #writeDoneButton {
