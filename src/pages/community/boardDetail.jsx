@@ -11,8 +11,8 @@ import setBoardLike from '/public/setBoardLike-icon.svg';
 import TitleWrapper from './_components/TitleToggle';
 import BoardTitle from './_components/BoardTitle';
 import BoardInfo from './_components/BoardInfo';
-import CommentWrapper from './_components/CommentWrapper';
-import CommentWriteWrapper from './_components/CommentWriteWrapper';
+import CommentWrapper from './_components/commentWrapper';
+import CommentWriteWrapper from './_components/commentWriteWrapper';
 
 export default function BoardDetail() {
   const [isClick, setIsClick] = useState(false);
@@ -25,6 +25,11 @@ export default function BoardDetail() {
     setImgSrc((isClick) =>
       isClick === defaultBoardLike ? setBoardLike : defaultBoardLike,
     );
+  };
+
+  const [isReply, setIsReply] = useState(false);
+  const focusCommentInput = () => {
+    setIsReply(true);
   };
 
   return (
@@ -49,11 +54,11 @@ export default function BoardDetail() {
             />
           </div>
         </div>
+        <CommentWrapper focusInput={focusCommentInput} />
+        {/* <CommentWrapper />
         <CommentWrapper />
-        <CommentWrapper />
-        <CommentWrapper />
-        <CommentWrapper />
-        <CommentWriteWrapper />
+        <CommentWrapper /> */}
+        <CommentWriteWrapper isFocus={isReply} />
       </div>
     </>
   );
