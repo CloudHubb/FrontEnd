@@ -1,0 +1,28 @@
+.myLogMenus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+.myLogMenus li {
+  border: 0.5px solid #849573;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 22.68px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.myLogMenus li:hover {
+  background-color: #849573;
+  color: white;
+}
+
+.myLogCardCon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 55%;
+  margin: auto;
+  padding: 3rem 0 6rem 0;
+}

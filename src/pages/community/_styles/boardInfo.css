@@ -1,0 +1,84 @@
+.boardInfoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 1em auto;
+  position: absolute;
+  left: 22px;
+  top: 90px;
+  font-family: var(--basic-font);
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.detailBoardInfoWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 1em auto;
+  padding: 0 55px;
+  font-family: var(--basic-font);
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.boardInfoSection {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailBoardInfoSection {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+
+.likeIconWrapper {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.commentIconWrapper {
+  display: flex;
+  align-items: center;
+  width: 40px;
+}
+
+.likeIconWrapper > img,
+.commentIconWrapper > img {
+  margin-right: 5px;
+}
+
+.likeIconWrapper > span {
+  color: #ff3d00;
+}
+
+.commentIconWrapper > span {
+  color: #1976d2;
+}
+
+.boardDateSection {
+  display: flex;
+  position: relative;
+  left: 15px;
+  font-family: var(--basic-font);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--light-gray-color);
+}
+
+.detailBoardDateSection {
+  display: flex;
+  font-family: var(--basic-font);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--light-gray-color);
+}

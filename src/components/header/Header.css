@@ -12,13 +12,22 @@ header {
   width: 40%;
   justify-content: space-between;
 }
+.headerNav > h1 {
+  border: 1px solid red;
+  width: 77px;
+  height: 56px;
+}
 .headerNav .menuCon {
   display: flex;
   gap: 2rem;
 }
+.menuCon a {
+  font-size: 22px;
+  font-weight: 400;
+}
 .menuCon a:hover,
 .menuCon a.activeLink {
-  font-weight: bold;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -28,7 +37,7 @@ header {
   gap: 1rem;
 }
 .headerEtcCon * {
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 800;
   cursor: pointer;
 }
@@ -38,18 +47,20 @@ header {
 .searchBar {
   position: absolute;
   right: 11rem;
-  bottom: 4px;
+  bottom: 26px;
   border: none;
   outline: none;
   background-color: #849573;
   border-radius: 5px;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   font-size: small;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   cursor: auto;
+  width: 335px;
 }
 .searchBar::placeholder {
   color: white;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 16px;
 }

@@ -18,7 +18,7 @@ export default function Section1() {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="BannerSwiper"
       >
         <SwiperSlide>
           <div className="imgCon">

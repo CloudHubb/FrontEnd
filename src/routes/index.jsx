@@ -7,6 +7,8 @@ import Header from '../components/header/Header';
 import HomePage from '../pages/home/page';
 
 import CommunityPage from '../pages/community/page';
+import BoardDetailPage from '../pages/community/boardDetail';
+import BoardWritePage from '../pages/community/boardWrite';
 
 import DataRoomPage from '../pages/data_room/page';
 
@@ -26,6 +28,8 @@ import SecretCardPasswordPage from '../pages/my_page/_subComponents/_secretConta
 import SecretCardPage from '../pages/my_page/_subComponents/_secretContainer/secretCardPage';
 import WritingSecretItemPage from '../pages/my_page/_subComponents/_secretContainer/writingSecretItemPage';
 import SearchResultPage from '../pages/search_result/page';
+import MyLogPassswordPage from '../pages/my_page/_subComponents/_myActivity/myLogPassswordPage';
+import MyLogPage from '../pages/my_page/_subComponents/_myActivity/myLogPage';
 
 export default function Router() {
   const elements = [
@@ -40,6 +44,14 @@ export default function Router() {
         {
           path: routes.community,
           element: <CommunityPage />,
+        },
+        {
+          path: routes.boardDetail,
+          element: <BoardDetailPage />,
+        },
+        {
+          path: routes.boardWrite,
+          element: <BoardWritePage />,
         },
         {
           path: routes.dataroom,
@@ -68,6 +80,14 @@ export default function Router() {
         {
           path: routes.writingSecretItem,
           element: <WritingSecretItemPage />,
+        },
+        {
+          path: routes.myLogPassword,
+          element: <MyLogPassswordPage />,
+        },
+        {
+          path: routes.myLog,
+          element: <MyLogPage />,
         },
         {
           path: routes.selftest,

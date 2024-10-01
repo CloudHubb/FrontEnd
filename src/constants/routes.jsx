@@ -2,6 +2,8 @@
 export const routes = {
   home: '/home',
   community: '/community',
+  boardWrite: '/board/write',
+  boardDetail: '/board/:boardId',
   dataroom: '/dataroom',
   mypage: '/mypage',
   userInfoEdit: '/mypage/edit',
@@ -9,6 +11,8 @@ export const routes = {
   secretCardPassword: '/mypage/secretCardPassword/:id',
   secretCard: '/mypage/secretCard/:id',
   writingSecretItem: '/mypage/secretCard/:id/writingSecretItem/:id',
+  myLogPassword: '/mypage/myLogPassword',
+  myLog: '/mypage/myLog',
   selftest: '/selfTest',
   testDescription: '/selfTest/:testType',
   testProgress: '/selfTest/testPage/:testType',

@@ -20,11 +20,12 @@ section {
   padding-left: 4rem;
 }
 .titleCon h2 {
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 64px;
 }
 .titleCon p {
-  font-weight: normal;
+  font-weight: 500;
+  font-size: 24px;
 }
 .titleCon .redLetter {
   color: red;

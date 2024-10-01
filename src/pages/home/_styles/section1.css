@@ -22,18 +22,18 @@ section {
   position: absolute;
   top: 35%;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 56px;
   color: transparent;
   -webkit-text-stroke: 1px black;
 }
 .imgCon p {
   position: absolute;
   top: 55%;
-  font-size: 5rem;
+  font-size: 81px;
   font-weight: 600;
 }
 .imgCon p span {
-  font-size: 2rem;
+  font-size: 44px;
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px black;
