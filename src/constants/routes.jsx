@@ -2,8 +2,6 @@
 export const routes = {
   home: '/home',
   community: '/community',
-  boardWrite: '/board/write',
-  boardDetail: '/board/:boardId',
   dataroom: '/dataroom',
   mypage: '/mypage',
   userInfoEdit: '/mypage/edit',
