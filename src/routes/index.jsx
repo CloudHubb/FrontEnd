@@ -28,6 +28,8 @@ import SecretCardPasswordPage from '../pages/my_page/_subComponents/_secretConta
 import SecretCardPage from '../pages/my_page/_subComponents/_secretContainer/secretCardPage';
 import WritingSecretItemPage from '../pages/my_page/_subComponents/_secretContainer/writingSecretItemPage';
 import SearchResultPage from '../pages/search_result/page';
+import MyLogPassswordPage from '../pages/my_page/_subComponents/_myActivity/myLogPassswordPage';
+import MyLogPage from '../pages/my_page/_subComponents/_myActivity/myLogPage';
 
 export default function Router() {
   const elements = [
@@ -78,6 +80,14 @@ export default function Router() {
         {
           path: routes.writingSecretItem,
           element: <WritingSecretItemPage />,
+        },
+        {
+          path: routes.myLogPassword,
+          element: <MyLogPassswordPage />,
+        },
+        {
+          path: routes.myLog,
+          element: <MyLogPage />,
         },
         {
           path: routes.selftest,

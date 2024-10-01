@@ -1,0 +1,13 @@
+.selfTestCardTitle {
+  font-weight: 600;
+  font-size: 31.34px;
+  color: black;
+  padding: 0.5rem;
+}
+.selfTestCardContent {
+  color: #8f8f8f;
+  font-size: 35.82px;
+  font-weight: 600;
+  padding: 0.5rem;
+  color: #ff9278;
+}

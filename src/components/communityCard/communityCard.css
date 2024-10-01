@@ -13,12 +13,14 @@
 }
 
 .communityCardTitle {
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 32.67px;
   color: black;
 }
 .communityCardContent {
   color: #8f8f8f;
+  font-size: 28px;
+  font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -42,20 +44,27 @@
 .reactionCon .fa-heart,
 .reactionCon .heartCount {
   color: #ff3d00;
+  font-size: 23.33px;
+  font-weight: 400;
 }
 .reactionCon .fa-heart,
 .reactionCon .fa-comment {
   width: 100%;
+  font-size: 23.33px;
+  font-weight: 400;
 }
 
 .reactionCon .fa-comment,
 .reactionCon .commentCount {
   color: #1976d2;
+  font-size: 23.33px;
+  font-weight: 400;
 }
 
 .reactionCon .etcCon {
   color: #d0d0d0;
-  font-size: small;
+  font-size: 23.33px;
+  font-weight: 400;
   padding-top: 5px;
 }
 .reactionCon * {

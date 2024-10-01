@@ -19,14 +19,15 @@ section {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding-left: 16rem;
+  padding-left: 10rem;
 }
 .legalTitleCon h2 {
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 64px;
 }
 .legalTitleCon p {
-  font-weight: normal;
+  font-weight: 500;
+  font-size: 24px;
 }
 .legalTitleCon .redLetter {
   color: red;
@@ -59,9 +60,9 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.title p {
-  font-weight: bold;
-  font-size: 1.2rem;
+.title > p {
+  font-weight: 600;
+  font-size: 34.89px;
   color: black;
 }
 .title .fa-arrow-right {
@@ -74,6 +75,6 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 90%;
-  font-size: medium;
-  font-weight: normal;
+  font-size: 29.91px;
+  font-weight: 400;
 }

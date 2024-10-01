@@ -28,7 +28,7 @@ export default function UserProfileEditPage() {
             <label htmlFor="profileEditInput">중복 확인</label>
           </div>
           <div className="profileEditErrorMsg">
-            {/* TODO: 오류 메세지 들어갈 자리 */}울랄라
+            {/* TODO: 오류 메세지 들어갈 자리 */}울랄라dkfja;ldkkfja;ldkfja;dlk
           </div>
         </div>
         <button type="submit" className="profileEditBtn">

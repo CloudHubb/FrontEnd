@@ -20,10 +20,11 @@ form {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-size: 48px;
 }
 .userProfileTitle > p {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 48px;
 }
 
 .userProfileInputCon {
@@ -31,21 +32,28 @@ form {
   margin: auto;
   padding: 3rem 0;
 }
+.userProfileInputCon > div {
+  display: flex;
+}
 .userProfileInputCon > * {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 .userProfileInputCon > p {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 29.14px;
+  font-weight: 400;
   padding-bottom: 1rem;
 }
 .userProfileInputCon .profileEditInput {
   border: 1px solid #ccac85;
   outline: none;
   border-radius: 1rem;
-  padding: 0.7rem;
+  padding: 0.7rem 1.2rem;
   width: 60%;
+}
+.profileEditInput::placeholder {
+  font-size: 16px;
+  font-weight: 400;
 }
 .userProfileInputCon label {
   border-radius: 1rem;
@@ -54,6 +62,8 @@ form {
   margin-left: 5px;
   background-color: #ccac85;
   color: white;
+  font-size: 20px;
+  font-weight: 400;
 }
 .userProfileInputCon label:hover {
   background-color: #b39066;
@@ -64,19 +74,21 @@ form {
 .profileEditErrorMsg {
   padding: 1rem;
   color: #ff0000;
-  font-size: small;
+  font-size: 16px;
 }
 
 .profileEditBtn {
-  width: 120px;
+  width: 200px;
   padding: 0.7rem 1.2rem;
-  border-radius: 1.2rem;
+  border-radius: 2rem;
   border: 2px solid #ccac85;
   color: #ccac85;
   background-color: white;
   margin: auto;
   cursor: pointer;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 29.14px;
+  font-weight: 600;
 }
 .profileEditBtn:hover {
   border: 2px solid #a28868;
