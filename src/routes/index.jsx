@@ -20,7 +20,9 @@ import GaslightingTestPage from '../pages/self_test/gaslightingTestPage';
 import TestDescriptionPage from '../pages/self_test/TestDescriptionPage';
 import TestProgressPage from '../pages/self_test/TestProgressPage';
 import TestResultPage from '../pages/self_test/TestResultPage';
-//
+
+// 마음일기 페이지
+import DiaryPage from '../pages/diary/page';
 
 import UserEditPage from '../pages/my_page/_subComponents/_userSetting/userEditPage';
 import UserProfileEditPage from '../pages/my_page/_subComponents//_userSetting/userProfileEditPage';
@@ -102,6 +104,10 @@ export default function Router() {
         {
           path: routes.search,
           element: <SearchResultPage />,
+        },
+        {
+          path: routes.diary,
+          element: <DiaryPage />,
         },
         {
           path: '/',
