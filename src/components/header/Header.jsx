@@ -5,6 +5,8 @@ import '../header/Header.css';
 
 import HeaderMenu from './_components/HeaderMenu';
 
+import LogoIcon from '/public/Logo.svg';
+
 export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -38,7 +40,9 @@ export default function Header() {
       <header>
         <nav className="headerNav">
           <h1>
-            <Link to="/home">로고</Link>
+            <Link to="/home">
+              <img src={LogoIcon} alt="다락방 로고" />
+            </Link>
           </h1>
           <div className="menuCon">
             <Link to="/home" className={isActive('/home') ? 'activeLink' : ''}>
@@ -51,10 +55,22 @@ export default function Header() {
               커뮤니티
             </Link>
             <Link
+              to="/diary"
+              className={isActive('/diary') ? 'activeLink' : ''}
+            >
+              마음일기
+            </Link>
+            <Link
               to="/selftest"
               className={isActive('/selftest') ? 'activeLink' : ''}
             >
               자가테스트
+            </Link>
+            <Link
+              to="/mypage"
+              className={isActive('/mypage') ? 'activeLink' : ''}
+            >
+              비밀창고
             </Link>
           </div>
         </nav>
