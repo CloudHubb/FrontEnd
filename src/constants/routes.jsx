@@ -17,4 +17,5 @@ export const routes = {
   selftTestResult: '/selfTest/resultPage/:testType',
   search: '/search', // 임시: 바꿀 예정
   diary: '/diary',
+  diaryWrite: '/diary/write',
 };

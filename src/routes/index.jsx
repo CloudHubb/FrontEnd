@@ -23,6 +23,7 @@ import TestResultPage from '../pages/self_test/TestResultPage';
 
 // 마음일기 페이지
 import DiaryPage from '../pages/diary/page';
+import DiaryWritePage from '../pages/diary/_subComponents/diaryWritePage';
 
 import UserEditPage from '../pages/my_page/_subComponents/_userSetting/userEditPage';
 import UserProfileEditPage from '../pages/my_page/_subComponents//_userSetting/userProfileEditPage';
@@ -108,6 +109,10 @@ export default function Router() {
         {
           path: routes.diary,
           element: <DiaryPage />,
+        },
+        {
+          path: routes.diaryWrite,
+          element: <DiaryWritePage />,
         },
         {
           path: '/',
