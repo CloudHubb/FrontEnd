@@ -1,0 +1,82 @@
+.diaryWriteWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto;
+  width: -webkit-fill-available;
+  height: fit-content;
+  max-width: 1920px;
+  padding: 10px 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+#diaryContentInput {
+  width: 90%;
+  height: 440px;
+  padding: 70px;
+  margin-top: 30px;
+  border: 0.8px solid var(--light-gray-color);
+  border-radius: 20px;
+  resize: none;
+  outline: none;
+  font-family: var(--basic-font);
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+.diaryWriteBottomSection {
+  display: flex;
+  width: -webkit-fill-available;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em auto;
+  padding: 0 10px;
+}
+
+.emotionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 430px;
+  height: 60px;
+  border-radius: 36px;
+  border: 0.7px solid var(--border-color);
+  padding: 5px 24px;
+  font-family: var(--basic-font);
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.emotionBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+
+.emotionBox > img:hover {
+  cursor: pointer;
+}
+
+#diaryWriteDoneButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 60px;
+  border-radius: 36px;
+  border: 0.7px solid var(--border-color);
+  background-color: var(--main-1-color);
+  font-family: var(--basic-font);
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+}
+
+#diaryWriteDoneButton:hover {
+  cursor: pointer;
+}
