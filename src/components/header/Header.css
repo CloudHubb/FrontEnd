@@ -14,11 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.headerNav > h1 {
-  border: 1px solid red;
-  width: 77px;
-  height: 56px;
-}
+
 .headerNav .menuCon {
   display: flex;
   gap: 2rem;
