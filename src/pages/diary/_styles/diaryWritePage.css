@@ -11,6 +11,20 @@
   align-items: center;
 }
 
+.diaryWriteTitleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 55px;
+  background-color: var(--main-1-color);
+  border-radius: 30px;
+  font-family: var(--basic-font);
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
 #diaryContentInput {
   width: 90%;
   height: 440px;

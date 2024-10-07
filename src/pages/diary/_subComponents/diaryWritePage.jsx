@@ -5,7 +5,6 @@ import AnnoyedIcon from '/public/emotion-icon/annoyed-icon.svg';
 import AngryIcon from '/public/emotion-icon/angry-icon.svg';
 
 // Components
-import TitleToggle from '../../community/_components/TitleToggle';
 import TitleInputWrapper from '../../community/_components/BoardTitle';
 
 // Styles
@@ -15,8 +14,8 @@ export default function diaryWritePage() {
   return (
     <>
       <div className="diaryWriteWrapper">
-        <TitleToggle />
-        <TitleInputWrapper type={'write'} />
+        <div className="diaryWriteTitleWrapper">마음일기</div>
+        <TitleInputWrapper type={'write'} id="diaryTitle" />
         <textarea
           id="diaryContentInput"
           placeholder="내용을 입력하세요"
