@@ -1,0 +1,21 @@
+.diaryTitleWrapper {
+  display: flex;
+  width: -webkit-fill-available;
+  max-width: 1920px;
+  position: static;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 55px;
+  margin: 3em auto 0;
+}
+
+.diaryTitleWrapper > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: var(--basic-font);
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}

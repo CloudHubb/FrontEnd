@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 35px 55px;
-  margin: 3em auto 0;
+  margin: 1em auto 0;
 }
 
 .boardWriteTitleWrapper > span {
@@ -52,7 +52,7 @@
   width: 50%;
   padding: 10px 10px 15px;
   font-family: var(--basic-font);
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 500;
   outline: none;
   background-color: transparent;

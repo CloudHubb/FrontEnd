@@ -18,4 +18,6 @@ export const routes = {
   testProgress: '/selfTest/testPage/:testType',
   selftTestResult: '/selfTest/resultPage/:testType',
   search: '/search', // 임시: 바꿀 예정
+  diary: '/diary',
+  diaryWrite: '/diary/write',
 };
