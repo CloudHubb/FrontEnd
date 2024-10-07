@@ -59,12 +59,12 @@ export default function Header() {
             >
               커뮤니티
             </Link>
-            <Link
+            {/* <Link
               to="/diary"
               className={isActive('/diary') ? 'activeLink' : ''}
             >
               마음일기
-            </Link>
+            </Link> */}
             <Link
               to="/selftest"
               className={isActive('/selftest') ? 'activeLink' : ''}
