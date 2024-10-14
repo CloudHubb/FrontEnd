@@ -5,8 +5,7 @@ export default function Button({ type, text }) {
   return (
     <>
       <button className={`${type}-buttonWrapper`}>
-        <p className={`${type}-buttonText`}></p>
-        {text}
+        <p className={`${type}-buttonText`}>{text}</p>
       </button>
     </>
   );

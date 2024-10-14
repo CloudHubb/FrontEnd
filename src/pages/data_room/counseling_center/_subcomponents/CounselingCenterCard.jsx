@@ -12,20 +12,35 @@ import CenterCtgButton from '/src/components/button/Button';
 import '../_styles/counselingCard.css';
 
 export default function CounselingCenterCard({ name, location, phone }) {
+  const onSearchCenter = () => {
+    const searchQuery = encodeURIComponent(name); // 주소를 네이버 검색어로 인코딩
+    const naverSearchUrl = `https://search.naver.com/search.naver?query=${searchQuery}`;
+    window.open(naverSearchUrl, '_blank'); // 새 탭에서 네이버 검색 페이지 열기
+  };
+
+  const onSearchCenterLocation = () => {
+    const searchLocationQuery = encodeURIComponent(location);
+    const naverMapSearchUrl = `https://map.naver.com/v5/search/${searchLocationQuery}`;
+    window.open(naverMapSearchUrl, '_blank');
+  };
+
   return (
     <>
       <div className="CounselingCenterCardWrapper">
         <div className="centerCardLeftWrapper">
-          <div className="centerImageBox">
+          <div className="centerImageBox" onClick={onSearchCenter}>
             <img src={ThumbnailIcon} alt="센터이미지" />
           </div>
         </div>
         <div className="centerCardRightWrapper">
           <div className="centerTitleWrapper">
-            <span>{name}</span>
+            <span onClick={onSearchCenter}>{name}</span>
             <CenterCtgButton type={'centerCtg'} text={'카테고리'} />
           </div>
-          <div className="centerLocationWrapper">
+          <div
+            className="centerLocationWrapper"
+            onClick={onSearchCenterLocation}
+          >
             <img src={MapIcon} alt="지도 아이콘" />
             <span>{location}</span>
           </div>

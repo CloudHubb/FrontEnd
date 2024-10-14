@@ -1,6 +1,6 @@
 .centerListWrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -9,10 +9,9 @@
   font-size: 30px;
   font-weight: 700;
   color: black;
-  margin: 1.5em 0;
+  margin: 1.5em 0 1em 0;
 }
 
-/* CenterSwiper를 위한 커스텀 스타일 */
 .centerSwiper {
   width: 100%;
   height: auto;
@@ -29,21 +28,33 @@
 .centerSwiper .swiper-slide {
   display: flex;
   justify-content: space-between; /* 카드가 중앙에 오도록 설정 */
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
   border-radius: 10px;
   height: auto;
 }
 
-/* Pagination 스타일 */
+.centerSwiper .swiper-pagination {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0px;
+  height: 20px;
+}
+
 .centerSwiper .swiper-pagination-bullet {
-  background-color: black;
-  width: 10px;
-  height: 10px;
-  opacity: 0.7;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 1px solid var(--main-1-color);
+  opacity: 1;
 }
 
 .centerSwiper .swiper-pagination-bullet-active {
-  background-color: black;
+  width: 40px;
+  transition: width 0.3s;
+  border-radius: 5px;
+  background: var(--main-1-color);
+  border: 1px solid transparent;
   opacity: 1;
 }
