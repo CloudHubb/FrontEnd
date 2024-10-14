@@ -33,6 +33,7 @@ import WritingSecretItemPage from '../pages/my_page/_subComponents/_secretContai
 import SearchResultPage from '../pages/search_result/page';
 import MyLogPassswordPage from '../pages/my_page/_subComponents/_myActivity/myLogPassswordPage';
 import MyLogPage from '../pages/my_page/_subComponents/_myActivity/myLogPage';
+import NewsPage from '../pages/data_room/_newsPage/page';
 
 export default function Router() {
   const elements = [
@@ -123,6 +124,10 @@ export default function Router() {
         {
           path: routes.diaryWrite,
           element: <DiaryWritePage />,
+        },
+        {
+          path: routes.newsPage,
+          element: <NewsPage />,
         },
         {
           path: '/',

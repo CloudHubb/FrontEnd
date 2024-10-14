@@ -20,4 +20,5 @@ export const routes = {
   search: '/search', // 임시: 바꿀 예정
   diary: '/diary',
   diaryWrite: '/diary/write',
+  newsPage: '/news',
 };

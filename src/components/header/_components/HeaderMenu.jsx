@@ -14,7 +14,7 @@ export default function HeaderMenu() {
       <div className="category">
         <Link to="/#">데이트 폭력</Link>
         <Link to="/#">법적 자료</Link>
-        <Link to="/#">뉴스 자료</Link>
+        <Link to="/news">뉴스 자료</Link>
         <Link to="/#">교육 자료</Link>
         <Link to="/#">상담 센터</Link>
       </div>
