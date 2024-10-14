@@ -23,8 +23,8 @@ export default function Section2() {
             법적 자료
           </button>
         </Link>
-        <Link to="/#">
-          <button className={isActive('/#') ? 'activeButton' : ''}>
+        <Link to="/news">
+          <button className={isActive('/news') ? 'activeButton' : ''}>
             뉴스 자료
           </button>
         </Link>
