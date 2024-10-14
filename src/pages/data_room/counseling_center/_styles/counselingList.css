@@ -1,0 +1,60 @@
+.centerListWrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.centerListTitle {
+  font-family: var(--basic-font);
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  margin: 1.5em 0 1em 0;
+}
+
+.centerSwiper {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.centerSwiper .centerCardWrapper {
+  display: flex;
+  flex-direction: column; /* 카드를 세로로 배치 */
+  gap: 10px; /* 카드 간 간격 */
+}
+
+/* Swiper 슬라이드 간 간격과 관련된 스타일 */
+.centerSwiper .swiper-slide {
+  display: flex;
+  justify-content: space-between; /* 카드가 중앙에 오도록 설정 */
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.centerSwiper .swiper-pagination {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0px;
+  height: 20px;
+}
+
+.centerSwiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 1px solid var(--main-1-color);
+  opacity: 1;
+}
+
+.centerSwiper .swiper-pagination-bullet-active {
+  width: 40px;
+  transition: width 0.3s;
+  border-radius: 5px;
+  background: var(--main-1-color);
+  border: 1px solid transparent;
+  opacity: 1;
+}

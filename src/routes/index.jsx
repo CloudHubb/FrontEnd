@@ -12,6 +12,9 @@ import BoardWritePage from '../pages/community/boardWrite';
 
 import DataRoomPage from '../pages/data_room/page';
 
+// 상담센터 페이지
+import CounselingCenterPage from '../pages/data_room/counseling_center/CounselingPage';
+
 import MyPage from '../pages/my_page/page';
 
 // 자가진단 페이지
@@ -123,6 +126,10 @@ export default function Router() {
         {
           path: routes.diaryWrite,
           element: <DiaryWritePage />,
+        },
+        {
+          path: routes.counselingCenter,
+          element: <CounselingCenterPage />,
         },
         {
           path: '/',
