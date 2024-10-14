@@ -1,0 +1,82 @@
+.CounselingCenterCardWrapper {
+  display: flex;
+  width: 885px;
+  height: 235px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 2em auto;
+  background-color: white;
+}
+
+.centerCardLeftWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  margin-right: 1em;
+}
+
+.centerImageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 215px;
+  background-color: white;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.centerImageBox > img {
+  width: 200px;
+}
+
+.centerCardRightWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 55px 15px;
+}
+
+.centerTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  font-family: var(--basic-font);
+}
+
+.centerTitleWrapper > span {
+  font-weight: 600;
+  font-size: 26px;
+  color: black;
+}
+
+.centerLocationWrapper,
+.centerNumberWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  font-family: var(--basic-font);
+}
+
+.centerLocationWrapper > img,
+.centerNumberWrapper > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1em;
+}
+
+.centerLocationWrapper > span,
+.centerNumberWrapper > span {
+  font-weight: 500;
+  font-size: 22px;
+  color: #999;
+}

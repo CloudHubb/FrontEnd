@@ -1,0 +1,18 @@
+.centerCtg-buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 98px;
+  height: 38px;
+  background: white;
+  border: 0.65px solid var(--main-1-color);
+  border-radius: 26px;
+  font-family: var(--basic-font);
+}
+
+.centerCtg-buttonText {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--main-1-color);
+}

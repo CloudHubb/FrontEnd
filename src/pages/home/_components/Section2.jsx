@@ -33,7 +33,7 @@ export default function Section2() {
             교육 자료
           </button>
         </Link>
-        <Link to="/#">
+        <Link to="/counseling-center">
           <button className={isActive('/#') ? 'activeButton' : ''}>
             상담 센터
           </button>
