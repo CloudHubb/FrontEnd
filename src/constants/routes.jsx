@@ -20,5 +20,9 @@ export const routes = {
   search: '/search', // 임시: 바꿀 예정
   diary: '/diary',
   diaryWrite: '/diary/write',
+<<<<<<< HEAD
+  newsPage: '/news',
+=======
   counselingCenter: '/counseling-center',
+>>>>>>> d7d325ac4ef666cabcf1bbf65757a81a67808194
 };

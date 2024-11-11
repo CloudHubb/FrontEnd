@@ -36,6 +36,7 @@ import WritingSecretItemPage from '../pages/my_page/_subComponents/_secretContai
 import SearchResultPage from '../pages/search_result/page';
 import MyLogPassswordPage from '../pages/my_page/_subComponents/_myActivity/myLogPassswordPage';
 import MyLogPage from '../pages/my_page/_subComponents/_myActivity/myLogPage';
+import NewsPage from '../pages/data_room/_newsPage/page';
 
 export default function Router() {
   const elements = [
@@ -128,8 +129,13 @@ export default function Router() {
           element: <DiaryWritePage />,
         },
         {
+<<<<<<< HEAD
+          path: routes.newsPage,
+          element: <NewsPage />,
+=======
           path: routes.counselingCenter,
           element: <CounselingCenterPage />,
+>>>>>>> d7d325ac4ef666cabcf1bbf65757a81a67808194
         },
         {
           path: '/',
