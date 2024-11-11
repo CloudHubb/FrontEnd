@@ -1,11 +1,11 @@
 .headerMenuCon {
   box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  width: 320px;
+  width: 335px;
   position: absolute;
   z-index: 999;
   right: 40px;
-  top: 50px;
+  top: 90px;
   background-color: #e3d3bc;
 }
 
@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 .userName > p {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -33,6 +33,7 @@
 .category > * {
   padding: 1rem 0;
   font-size: 16px;
+  font-weight: 400;
   cursor: pointer;
 }
 .category > *:hover,
@@ -48,6 +49,7 @@
 }
 .etcMenu * {
   font-size: 16px;
+  font-weight: 500;
 }
 i {
   width: 30px;
@@ -64,6 +66,7 @@ i {
 }
 .userSetting > * {
   font-size: 12px;
+  font-weight: 400;
 }
 .userSetting > *:nth-of-type(1) {
   color: #000000;

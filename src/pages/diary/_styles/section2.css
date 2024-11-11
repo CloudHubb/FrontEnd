@@ -1,0 +1,17 @@
+.diaryGrid {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  overflow-y: auto;
+  margin: 2em auto;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  column-gap: 15px;
+  row-gap: 40px;
+  padding: 10px;
+}
+
+.diaryGrid::-webkit-scrollbar {
+  all: unset;
+}

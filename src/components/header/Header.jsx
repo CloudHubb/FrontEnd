@@ -1,9 +1,11 @@
-import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'; // useLocation 추가
-import { useEffect, useState } from 'react';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
 
 import '../header/Header.css';
 
 import HeaderMenu from './_components/HeaderMenu';
+
+import LogoIcon from '/public/Logo.svg';
 
 export default function Header() {
   const navigate = useNavigate();
@@ -12,7 +14,9 @@ export default function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
-  const [, setKeyboard] = useState('');
+  const [keyBoard, setKeyboard] = useState('');
+
+  const searchInputRef = useRef(null); // ref 추가
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,15 +26,18 @@ export default function Header() {
   };
   const handleSearchBar = (e) => {
     e.preventDefault();
-    console.log('클릭', e);
     if (e.key === 'Enter') {
       navigate('/search'); // 바꿀 예정
+      setKeyboard(''); // state 값 초기화
+      if (searchInputRef.current) {
+        searchInputRef.current.value = ''; // 입력창 초기화
+      }
+      console.log(keyBoard); // 비동기 상태이므로 이전 값 출력
     }
   };
 
-  // 메뉴 클릭해서 다른 페이지로 이동 시, 메뉴 자동으로 닫힐 수 있도록 함
   useEffect(() => {
-    setIsMenuOpen(false);
+    setIsSearchBarOpen(false);
   }, [location.pathname]);
 
   return (
@@ -38,7 +45,9 @@ export default function Header() {
       <header>
         <nav className="headerNav">
           <h1>
-            <Link to="/home">로고</Link>
+            <Link to="/home">
+              <img src={LogoIcon} alt="다락방 로고" />
+            </Link>
           </h1>
           <div className="menuCon">
             <Link to="/home" className={isActive('/home') ? 'activeLink' : ''}>
@@ -50,11 +59,23 @@ export default function Header() {
             >
               커뮤니티
             </Link>
+            {/* <Link
+              to="/diary"
+              className={isActive('/diary') ? 'activeLink' : ''}
+            >
+              마음일기
+            </Link> */}
             <Link
               to="/selftest"
               className={isActive('/selftest') ? 'activeLink' : ''}
             >
               자가테스트
+            </Link>
+            <Link
+              to="/mypage"
+              className={isActive('/mypage') ? 'activeLink' : ''}
+            >
+              비밀창고
             </Link>
           </div>
         </nav>
@@ -68,6 +89,7 @@ export default function Header() {
               type="text"
               className="searchBar"
               placeholder="검색어를 입력하세요."
+              ref={searchInputRef} // ref 연결
               onChange={(e) => {
                 setKeyboard(e.target.value);
               }}

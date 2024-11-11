@@ -6,7 +6,7 @@ section {
 
 .myPageUserName {
   padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 64px;
   font-weight: 600;
 }
 
@@ -15,7 +15,7 @@ section {
   justify-content: start;
   align-items: center;
   cursor: pointer;
-  width: 10%;
+  width: 15%;
   border-radius: 5px;
 }
 .userInfoModify:hover {
@@ -26,8 +26,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
-
+.userInfoModify p {
+  font-size: 20px;
+  font-weight: 400;
+}
 .myPageWrap {
   padding: 4rem 0;
   border-bottom: 5px solid #d0d0d0;

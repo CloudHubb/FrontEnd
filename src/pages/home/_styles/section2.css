@@ -14,8 +14,11 @@ section {
 .section2Nav button {
   padding: 0.7rem 1rem;
   background-color: white;
-  border-radius: 1.5rem;
-  border: 1px solid #849573;
+  border-radius: 2rem;
+  border: 0.5px solid #849573;
+  font-size: 22px;
+  font-weight: 400;
+  color: #849573;
 }
 .section2Nav button:hover,
 .section2Nav .activeButton {

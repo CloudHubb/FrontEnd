@@ -1,0 +1,32 @@
+.regionDropMenuWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100px;
+  font-family: var(--basic-font);
+  color: black;
+}
+
+.regionDropMenuWrapper > label {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1em;
+}
+
+#regionSelect {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid var(--main-1-color);
+  font-family: var(--basic-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  padding: 5px;
+  background-color: white;
+}
+
+.regionOption:hover {
+  background-color: var(--main-1-color);
+}

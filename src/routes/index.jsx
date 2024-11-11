@@ -10,6 +10,9 @@ import CommunityPage from '../pages/community/page';
 
 import DataRoomPage from '../pages/data_room/page';
 
+// 상담센터 페이지
+import CounselingCenterPage from '../pages/data_room/counseling_center/CounselingPage';
+
 import MyPage from '../pages/my_page/page';
 
 // 자가진단 페이지
@@ -18,7 +21,10 @@ import GaslightingTestPage from '../pages/self_test/gaslightingTestPage';
 import TestDescriptionPage from '../pages/self_test/TestDescriptionPage';
 import TestProgressPage from '../pages/self_test/TestProgressPage';
 import TestResultPage from '../pages/self_test/TestResultPage';
-//
+
+// 마음일기 페이지
+import DiaryPage from '../pages/diary/page';
+import DiaryWritePage from '../pages/diary/_subComponents/diaryWritePage';
 
 import UserEditPage from '../pages/my_page/_subComponents/_userSetting/userEditPage';
 import UserProfileEditPage from '../pages/my_page/_subComponents//_userSetting/userProfileEditPage';
@@ -26,6 +32,9 @@ import SecretCardPasswordPage from '../pages/my_page/_subComponents/_secretConta
 import SecretCardPage from '../pages/my_page/_subComponents/_secretContainer/secretCardPage';
 import WritingSecretItemPage from '../pages/my_page/_subComponents/_secretContainer/writingSecretItemPage';
 import SearchResultPage from '../pages/search_result/page';
+import MyLogPassswordPage from '../pages/my_page/_subComponents/_myActivity/myLogPassswordPage';
+import MyLogPage from '../pages/my_page/_subComponents/_myActivity/myLogPage';
+import NewsPage from '../pages/data_room/_newsPage/page';
 
 export default function Router() {
   const elements = [
@@ -70,6 +79,14 @@ export default function Router() {
           element: <WritingSecretItemPage />,
         },
         {
+          path: routes.myLogPassword,
+          element: <MyLogPassswordPage />,
+        },
+        {
+          path: routes.myLog,
+          element: <MyLogPage />,
+        },
+        {
           path: routes.selftest,
           element: <SelfTestPage />,
         },
@@ -92,6 +109,23 @@ export default function Router() {
         {
           path: routes.search,
           element: <SearchResultPage />,
+        },
+        {
+          path: routes.diary,
+          element: <DiaryPage />,
+        },
+        {
+          path: routes.diaryWrite,
+          element: <DiaryWritePage />,
+        },
+        {
+<<<<<<< HEAD
+          path: routes.newsPage,
+          element: <NewsPage />,
+=======
+          path: routes.counselingCenter,
+          element: <CounselingCenterPage />,
+>>>>>>> d7d325ac4ef666cabcf1bbf65757a81a67808194
         },
         {
           path: '/',
