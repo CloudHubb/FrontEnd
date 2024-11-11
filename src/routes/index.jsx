@@ -7,8 +7,6 @@ import Header from '../components/header/Header';
 import HomePage from '../pages/home/page';
 
 import CommunityPage from '../pages/community/page';
-import BoardDetailPage from '../pages/community/boardDetail';
-import BoardWritePage from '../pages/community/boardWrite';
 
 import DataRoomPage from '../pages/data_room/page';
 
@@ -51,14 +49,6 @@ export default function Router() {
         {
           path: routes.community,
           element: <CommunityPage />,
-        },
-        {
-          path: routes.boardDetail,
-          element: <BoardDetailPage />,
-        },
-        {
-          path: routes.boardWrite,
-          element: <BoardWritePage />,
         },
         {
           path: routes.dataroom,
